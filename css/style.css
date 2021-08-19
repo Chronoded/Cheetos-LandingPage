@@ -123,4 +123,92 @@ img{
 }
 
 /* =================== LAYOUT =================== */
+.main{
+    overflow: hidden; /*  Se usa para la animacion y las imagenes */
+}
+.container{
+    max-width: 986px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+.grid{
+    display: grid;
+}
 
+/* =================== HEADER =================== */
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: var(--z-fixed);
+    background: transparent;
+}
+
+/* =================== NAVBAR =================== */
+.nav{
+    height: var(--header-height);
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    display: flex;
+    width: 1.5rem;
+}
+.nav_toggle{
+    font-size: 1.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .nav_menu{
+        position: fixed;
+        background-color: var(--body-color);
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0 3rem;
+        transition: .4s;                 /*ANIMACION DEL NAVBAR*/
+    }
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.nav_link{
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+    background: var(--text-gradient);
+    color: transparent; 
+    /* Con el webkit agregas el background gradiante y el color transparente al texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.nav_link:hover{
+    background: var(--white-color);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.nav_close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/* ============= MOSTRAR MENU ===========*/
+.show-menu{
+    top: 0;
+    
+}
