@@ -1,10 +1,10 @@
-/* Google fonts */
+/* =================== Google fonts  =================== */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 /* Variables Css */
 :root{
     --header-height: 3rem;
 
-/* COLORES */
+/*  =================== COLORES  ===================*/
 /* hsl = hue(tono) saturation(tonalidad) lightness(matiz) */
 --hue-color: 206;
 --black-color: hsl(var(--hue-color),4% ,4%);
@@ -19,7 +19,7 @@
 --scroll-thumb-color: hsl(var(--hue-color),4% ,16%);
 --scroll-thumb-color-alt: hsl(var(--hue-color),4% ,20%);
 
-/* Font y tipografia  */
+/* =================== Font y tipografia  =================== */
 --body-font: 'Noto Sans JP', sans-serif;
 --biggest-font-size: 5rem;
 --bigger-font-size: 3.5rem;
@@ -31,11 +31,11 @@
 --smaller-font-size: .75rem;
 --text-line-height: 2rem;
 
-/* font weight */
+/*=================== font weight ===================*/
 --font-medium: 500;
 --font-semi-bold: 600;
 
-/* margenes abajo */
+/*=================== margenes abajo ===================*/
 --mb-0-5: .5rem;
 --mb-0-75: .75rem;
 --mb-1: 1rem;
@@ -43,13 +43,13 @@
 --mb-2: 2rem;
 --mb-2-5: 2.5rem;
 
-/* Z index  */  
+/* =================== Z index =================== */  
 --z-tooltip: 10;
 --z-fixed: 100;
 
 }
 
-/* RESPONSIVE DESIGN */
+/*=================== RESPONSIVE DESIGN =================== */
 @media screen and (min-width: 968px) {
     :root{
         --biggest-font-size: 7.5rem;
@@ -64,4 +64,63 @@
 }
 
 
-/* CSS BASE */
+/* =================== CSS BASE ===================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+h1,h2,h3{
+    color: var(--title-color);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+button,
+input{
+    border: none;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* CSS REUSABLE */
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.section_tittle{
+    font-size: var(--bigger-font-size);
+    text-align: center;
+    margin-bottom: var(--mb-2-5); 
+}
+
+.section_tittle-gradient{
+    background: var(--text-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* =================== LAYOUT =================== */
+
