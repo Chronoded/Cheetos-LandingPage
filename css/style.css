@@ -154,7 +154,7 @@ img{
 }
 .nav_logo{
     display: flex;
-    width: 1.5rem;
+    width: 6rem;
 }
 .nav_toggle{
     font-size: 1.2rem;
@@ -210,5 +210,5 @@ img{
 /* ============= MOSTRAR MENU ===========*/
 .show-menu{
     top: 0;
-    
+
 }
