@@ -1,22 +1,67 @@
 /* Google fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 /* Variables Css */
 :root{
-    --header-height: ;
+    --header-height: 3rem;
 
 /* COLORES */
+/* hsl = hue(tono) saturation(tonalidad) lightness(matiz) */
 --hue-color: 206;
---black-color: ;
---black-color-alt: ;
---title-color: ;
---text-color: ;
---text-color-light: ; 
---white-color: ;
---body-color: ;
---container-color: ;
---text-gradient: ;
---scroll-thumb-color: ;
---scroll-thumb-color-alt: ;
+--black-color: hsl(var(--hue-color),4% ,4%);
+--black-color-alt: hsl(var(--hue-color),4% ,8%);
+--title-color: hsl(var(--hue-color),4% ,95%);
+--text-color: hsl(var(--hue-color),4% ,75%);
+--text-color-light: hsl(var(--hue-color),4% ,65%); 
+--white-color: #fff;
+--body-color: hsl(var(--hue-color),4% ,6%);
+--container-color: hsl(var(--hue-color),4% ,10%);;
+--text-gradient: linear-gradient(hsl(var(--hue-color),4% ,24%), hsl(var(--hue-color),4% ,8%));
+--scroll-thumb-color: hsl(var(--hue-color),4% ,16%);
+--scroll-thumb-color-alt: hsl(var(--hue-color),4% ,20%);
 
+/* Font y tipografia  */
+--body-font: 'Noto Sans JP', sans-serif;
+--biggest-font-size: 5rem;
+--bigger-font-size: 3.5rem;
+--big-font-size: 2.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1.125rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+--smaller-font-size: .75rem;
+--text-line-height: 2rem;
+
+/* font weight */
+--font-medium: 500;
+--font-semi-bold: 600;
+
+/* margenes abajo */
+--mb-0-5: .5rem;
+--mb-0-75: .75rem;
+--mb-1: 1rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+
+/* Z index  */  
+--z-tooltip: 10;
+--z-fixed: 100;
 
 }
+
+/* RESPONSIVE DESIGN */
+@media screen and (min-width: 968px) {
+    :root{
+        --biggest-font-size: 7.5rem;
+        --bigger-font-size: 4.5rem;
+        --big-font-size: 4rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;  
+    }
+}
+
+
+/* CSS BASE */
