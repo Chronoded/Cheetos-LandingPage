@@ -212,3 +212,68 @@ img{
     top: 0;
 
 }
+
+/* Cambiar background del Header */
+
+/* Link Activo */
+
+/* ============= HOME ===========*/
+.home_img{
+    width: 300px;
+    position: absolute;
+    top: -1rem;
+    right: 1.5rem;
+}
+.home_data{
+    padding-top: 5rem;
+}
+
+.home_header{
+    position: relative;
+}
+
+.home_tittle{
+    font-size: var(--biggest-font-size);
+    background: var(--text-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+    line-height: 6rem;
+}
+
+.home_subtittle{
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-2-5);
+}
+
+.home_tittle-description{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.home_description{
+    margin-bottom: var(--mb-2-5);
+    line-height: var(--text-line-height);
+}
+
+.home_price{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-left: var(--mb-0-75);
+}
+
+/* ============= BUTTONS ===========*/
+
+/* ============= SPONSOR ===========*/
+
+/* ============= INFO ===========*/
+
+/* ============= CASE ===========*/
+
+/* ============= DISCOUNT ===========*/
+
+/* ============= PRODUCTOS ===========*/
