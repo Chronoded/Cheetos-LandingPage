@@ -13,7 +13,7 @@
 --text-color: hsl(var(--hue-color),4% ,75%);
 --text-color-light: hsl(var(--hue-color),4% ,65%); 
 --white-color: #fff;
---body-color: hsl(var(--hue-color),4% ,6%);
+--body-color: hsl(var(--hue-color),40% ,60%);
 --container-color: hsl(var(--hue-color),4% ,10%);;
 --text-gradient: linear-gradient(hsl(var(--hue-color),4% ,24%), hsl(var(--hue-color),4% ,8%));
 --scroll-thumb-color: hsl(var(--hue-color),4% ,16%);
@@ -383,6 +383,47 @@ img{
 }
 
 /* ============= PRODUCTOS ===========*/
+.producto_line{
+    line-height: 4rem;
+}
+.producto_container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem 1.5rem;
+    padding-top: 3rem; 
+}
+.producto_card{
+    position: relative;
+    height: 132px;
+    background-color: var(--container-color);
+    padding: .75rem;
+    border-radius: .5rem;
+    display: grid;
+}
+.producto_img{
+    width: 80px;
+    position: absolute;
+    inset: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -3rem;
+}
+.producto_content{
+    align-self: flex-end;
+}
+.producto_tittle, .producto_price{
+    font-size: var(--small-font-size);
+}
+.producto_price{
+    font-weight: var(--font-semi-bold);
+}
+.producto_button{
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    padding: .5rem;
+    border-radius: .35rem;
+}
+
 
 /* ============= FOOTER ===========*/
 
