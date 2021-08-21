@@ -336,7 +336,7 @@ img{
 }
 
 .info_img{
-    width: 300px;
+    width: 250px;
     position: absolute;
     top: 1.5rem;
     right: -2rem;
@@ -344,8 +344,43 @@ img{
 
 
 /* ============= CASE ===========*/
+.case_container{
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+}
+.case_data{
+    padding: .5rem 0 3rem;
+}
+.case_img{
+    width: 250px;
+    position: absolute;
+    left: -3rem;
+}
+.case_description{
+    margin-bottom: var(--mb-1-5);
+    line-height: var(--text-line-height);
+}
 
 /* ============= DISCOUNT ===========*/
+.discount_container{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: .75rem;
+}
+.discount_tittle{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+.discount_description{
+    margin-bottom: var(--mb-1);
+}
+.discount_img{
+    width: 150px;
+    position: absolute;
+    top: 4rem;
+    right: -3rem;
+}
 
 /* ============= PRODUCTOS ===========*/
 
