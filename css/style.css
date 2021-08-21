@@ -214,6 +214,9 @@ img{
 }
 
 /* Cambiar background del Header */
+.scroll-header{
+    background-color: var(--body-color);
+}
 
 /* Link Activo */
 
@@ -267,8 +270,40 @@ img{
 }
 
 /* ============= BUTTONS ===========*/
+.button{
+    display: inline-block;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+.button:hover{
+    background-color: var(--black-color-alt);
+}
+.button_icon{
+    font-size: 1.2rem;
+}
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+
+
 
 /* ============= SPONSOR ===========*/
+.sponsor_img{
+    width: 90px;
+}
+.sponsor_container{
+    /* El grid de abajo crea un template de columnas en repeticion automaticas, con un minimo de 110px */
+    grid-template-columns: repeat(auto-fit,minmax(110px,1fr));
+    justify-items: center;
+    align-items: center;
+}
+
 
 /* ============= INFO ===========*/
 

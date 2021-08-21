@@ -24,7 +24,15 @@ const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    // Cada que hacemos click en el nav link, se quita el menu
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+//CAMBIO DE BACKGROUND DEL HEADER
+function scrollHeader(){
+    const header = document.getElementById('header')
+    // Cuando el scroll es mayor que 50 del viewport height, se agrega un scroll header class al tag del header
+    if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
