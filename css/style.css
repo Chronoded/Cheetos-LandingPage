@@ -104,7 +104,7 @@ img{
     height: auto;
 }
 
-/* CSS REUSABLE */
+/*  ===================  CSS REUSABLE  ===================  */
 .section{
     padding: 4rem 0 2rem;
 }
@@ -291,8 +291,6 @@ img{
 }
 
 
-
-
 /* ============= SPONSOR ===========*/
 .sponsor_img{
     width: 90px;
@@ -306,9 +304,51 @@ img{
 
 
 /* ============= INFO ===========*/
+.info_container{
+    position: relative;
+}
+
+.info_content{
+    row-gap: 1.5rem;
+}
+
+.info_data{
+    display: grid;
+    row-gap: .25rem;
+}
+
+.info_icon{
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.info_tittle{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.info_subtittle{
+    font-size: var(--smaller-font-size);
+}
+
+.info_data:nth-child(1), .info_data:nth-child(4){
+    margin-left: var(--mb-1-5);
+}
+
+.info_img{
+    width: 300px;
+    position: absolute;
+    top: 1.5rem;
+    right: -2rem;
+}
+
 
 /* ============= CASE ===========*/
 
 /* ============= DISCOUNT ===========*/
 
 /* ============= PRODUCTOS ===========*/
+
+/* ============= FOOTER ===========*/
+
+/* ============= SCROLL UP ===========*/
