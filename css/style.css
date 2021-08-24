@@ -13,7 +13,7 @@
 --text-color: hsl(var(--hue-color),4% ,75%);
 --text-color-light: hsl(var(--hue-color),4% ,65%); 
 --white-color: #fff;
---body-color: hsl(var(--hue-color),40% ,60%);
+--body-color: hsl(var(--hue-color),4% ,6%);
 --container-color: hsl(var(--hue-color),4% ,10%);;
 --text-gradient: linear-gradient(hsl(var(--hue-color),4% ,24%), hsl(var(--hue-color),4% ,8%));
 --scroll-thumb-color: hsl(var(--hue-color),4% ,16%);
@@ -426,5 +426,97 @@ img{
 
 
 /* ============= FOOTER ===========*/
+.footer_container{
+    grid-template-columns: repeat(auto-fit, minmax(220, 1fr));
+    row-gap: 2rem;
+}
+
+.footer_logo{
+    width: 6rem;
+}
+
+.footer_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.footer_link{
+    color: var(--text-color);
+}
+
+.footer_link:hover{
+    color: var(--white-color);
+}
+
+.footer_form{
+    display: flex;
+    column-gap: .5rem;
+    background-color: var(--container-color);
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.footer_input{
+    background-color: var(--container-color);
+    width: 90%;
+    color: var(--white-color);
+}
+
+.footer_input::placeholder{
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+.footer_social{
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+.footer_social-link{
+    display: inline-flex;
+    color: var(--white-color);
+    background-color: var(--container-color);
+    padding: .5rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+.footer_social-link:hover{
+    background-color: var(--black-color);
+
+}
+
+.footer_copy{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer_copy-link{
+    font-size: smaller;
+    color: var(--text-color-light);
+}
 
 /* ============= SCROLL UP ===========*/
+
+/*Show Scroll Up*/
+
+/* ============= SCROLL BAR ===========*/
+
+
+
+/* ============= MEDIA QUERIES ===========*/
+/*For small devices*/
+
+
+/*For medium devices*/
+
+
+/*For large devices*/
