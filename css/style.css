@@ -269,7 +269,7 @@ img{
     top: -4rem;
     left: 1rem;
     /* Cambiar el tamaño de linea que se muestra (como cortando las letras) */
-    line-height: 7rem;
+    line-height: 6rem;
 }
 
 .home_subtittle{
@@ -724,7 +724,9 @@ img{
         padding-top: 6rem;
     }
     .home_tittle{
+        top: -5rem;
         left: 1rem;
+        line-height: 7rem;
     }
 
     .info_img{
@@ -781,7 +783,8 @@ img{
     }
     .home_tittle{
         top: -5rem;
-        left: 3.5rem;
+        left: 2rem;
+        line-height: 7rem;
     }
     .home_description{
         padding-right: 5rem;
