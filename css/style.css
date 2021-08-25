@@ -6,7 +6,7 @@
 
 /*  =================== COLORES  ===================*/
 /* hsl = hue(tono) saturation(tonalidad) lightness(matiz) */
---hue-color: 206;
+/* --hue-color: 206;
 --black-color: hsl(var(--hue-color),4% ,4%);
 --black-color-alt: hsl(var(--hue-color),4% ,8%);
 --title-color: hsl(var(--hue-color),4% ,95%);
@@ -17,7 +17,23 @@
 --container-color: hsl(var(--hue-color),4% ,10%);
 --text-gradient: linear-gradient(hsl(var(--hue-color),4% ,24%), hsl(var(--hue-color),4% ,8%));
 --scroll-thumb-color: hsl(var(--hue-color),4% ,16%);
+--scroll-thumb-color-alt: hsl(var(--hue-color),4% ,20%); */
+
+/*  =================== COLORES QUE YO DECIDI USAR ===================*/
+/* hsl = hue(tono) saturation(tonalidad) lightness(matiz) */
+--hue-color: 206;
+--black-color: hsl(var(--hue-color),4% ,4%);
+--black-color-alt: hsl(28,89% ,55%);
+--title-color: hsl(var(--hue-color),4% ,95%);
+--text-color: hsl(var(--hue-color),4% ,75%);
+--text-color-light: hsl(var(--hue-color),4% ,65%); 
+--white-color: #fff;
+--body-color: hsl(var(--hue-color),48% ,52%);
+--container-color: hsl(var(--hue-color),4% ,10%);
+--text-gradient: linear-gradient(hsl(var(--hue-color),4% ,24%), hsl(var(--hue-color),4% ,8%));
+--scroll-thumb-color: hsl(var(--hue-color),4% ,16%);
 --scroll-thumb-color-alt: hsl(var(--hue-color),4% ,20%);
+
 
 /* =================== Font y tipografia  =================== */
 --body-font: 'Noto Sans JP', sans-serif;
@@ -252,7 +268,8 @@ img{
     position: absolute;
     top: -4rem;
     left: 1rem;
-    line-height: 6rem;
+    /* Cambiar el tamaño de linea que se muestra (como cortando las letras) */
+    line-height: 7rem;
 }
 
 .home_subtittle{
